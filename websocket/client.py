@@ -17,8 +17,8 @@ class FtxWebsocketClient(WebsocketManager):
         super().__init__()
         self._trades: DefaultDict[str, Deque] = defaultdict(lambda: deque([], maxlen=10000))
         self._fills: Deque = deque([], maxlen=10000)
-        self._api_key = ''  # TODO: Place your API key here
-        self._api_secret = ''  # TODO: Place your API secret here
+        self._api_key = '2rZkbfND_jYOUkyU7bUzlqeir18KbBhXwDUf9nyl'  # TODO: Place your API key here
+        self._api_secret = 'AHbBdRq-LvYRNw4t6QcOOwz6rRKRHKtoN2gc11-Q'  # TODO: Place your API secret here
         self._orderbook_update_events: DefaultDict[str, Event] = defaultdict(Event)
         self._reset_data()
 

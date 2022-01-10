@@ -10,8 +10,8 @@ class FtxOtcClient:
 
     def __init__(self) -> None:
         self._session = Session()
-        self._api_key = '' # TODO: Place your API key here
-        self._api_secret = '' # TODO: Place your API secret here
+        self._api_key = '2rZkbfND_jYOUkyU7bUzlqeir18KbBhXwDUf9nyl' # TODO: Place your API key here
+        self._api_secret = 'AHbBdRq-LvYRNw4t6QcOOwz6rRKRHKtoN2gc11-Q' # TODO: Place your API secret here
 
     def _get(self, path: str, params: Optional[Dict[str, Any]] = None) -> Any:
         return self._request('GET', path, params=params)
